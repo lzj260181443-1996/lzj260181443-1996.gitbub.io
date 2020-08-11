@@ -54,7 +54,7 @@ $(function () {
 
   function search (path) {
     $.ajax({
-      url: "https://www.coderlluo.top/gh/lzj260181443-1996/lzj260181443-1996.github.io/search.xml",
+      url: GLOBAL_CONFIG.root + path,
       dataType: 'xml',
       success: function (xmlResponse) {
         // get the contents from search data
